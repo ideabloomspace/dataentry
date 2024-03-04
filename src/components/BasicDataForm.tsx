@@ -10,12 +10,12 @@ function BasicDataForm() {
   const handleChange = (e) => {
     const errors = {};
     const name = e.target.inputName.value;
-    const complaintDetails = e.target.inputCompalint.value;
-    const officerPhoneNumbers = e.target.inputOfficePhone.value;
-    const complaintPhoneNumber = e.target.phone.value;
+    //const complaintDetails = e.target.inputCompalint.value;
+    //const officerPhoneNumbers = e.target.inputOfficePhone.value;
+    //const complaintPhoneNumber = e.target.phone.value;
 
     if (name === "") {
-      errors.name = "Name can't be empty";
+      //errors.name = "Name can't be empty";
     }
     return errors;
   };
@@ -38,6 +38,7 @@ function BasicDataForm() {
         if (response.status == 200) {
           console.log(response);
           setResponse("शिकायत दर्ज हो चुकी है");
+
           events.target.reset();
         }
       })
