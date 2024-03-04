@@ -33,7 +33,7 @@ function BasicDataForm() {
       complaintPhoneNumber,
     };
     axios
-      .post("http://localhost:8080/v1/sendsms", formData)
+      .post("https://data-sms-latest.onrender.com/v1/sendsms", formData)
       .then((response) => {
         if (response.status == 200) {
           console.log(response);
